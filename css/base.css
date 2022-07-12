@@ -1,0 +1,157 @@
+/* 62.5% 1rem=10px */
+html {
+    font-size: 62.5%;
+    font-family: var(--font-family--primary);
+}
+
+*    {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    
+}
+
+h1 {
+
+}
+
+h2 {
+    
+}
+
+h3 {
+   
+}
+
+h4 {
+
+}
+
+a {
+
+}
+
+p {
+    
+}
+
+input {
+    
+}
+
+
+input::placeholder,
+textarea::placeholder {
+    text-align: left;
+}
+
+input,
+textarea {
+    padding-left: ;
+}
+
+textarea {
+    
+}   
+
+ul {
+    
+}
+
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    header {
+    
+    }
+    
+    section {
+        
+    }
+    
+    footer {
+        
+    }
+
+    h1 {
+        
+    }
+
+    h2 {
+        
+    }
+
+    h3 {
+
+    }
+
+    h4 {
+
+    }
+
+    a {
+        
+    }
+
+
+    input {
+        width: 100%;
+        
+    }
+    
+    textarea {
+        width: 100%;
+    }
+}
+
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+    .hamburger--icon {
+        display: none;
+    }
+
+    header {
+    
+    }
+    
+    section {
+        
+    }
+    
+    footer {
+        
+    }
+
+    h1 {
+        
+    }
+
+    h2 {
+        
+    }
+
+    h3 {
+
+    }
+
+    h4 {
+
+    }
+
+    a {
+
+    }
+
+    input {
+        width: var(--input-width--desktop);
+    }
+
+    textarea {
+        width: var(--textarea-width--desktop);
+    }
+
+
+}
