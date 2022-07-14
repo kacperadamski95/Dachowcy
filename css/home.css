@@ -1,10 +1,29 @@
+
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
+    .main-page {
+        padding-top: var(--space--xxl);
+        padding-bottom: 7.5rem;
+        padding-left: var(--space--m);
+        padding-right: var(--space--m);
+        border-radius: 50%;
+    }
 
+    .about-us-mobile {
+        background-color: var(--background-color--secondary);
+        width: 90vw;
+        padding-top: var(--space--xxl);
+        padding-bottom: 7.5rem;
+        padding-left: var(--space--m);
+        padding-right: var(--space--m);
+    }
 }
 
 
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
-    
+    .main-page {
+        background-color: var(--background-color--primary);
+    }
 }

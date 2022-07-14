@@ -4,101 +4,37 @@ html {
     font-family: var(--font-family--primary);
 }
 
-*    {
+*   {
     box-sizing: border-box;
     margin: 0;
-}
-
-body {
-    
-}
-
-h1 {
-
-}
-
-h2 {
-    
-}
-
-h3 {
-   
-}
-
-h4 {
-
-}
-
-a {
-
-}
-
-p {
-    
-}
-
-input {
-    
-}
-
-
-input::placeholder,
-textarea::placeholder {
-    text-align: left;
-}
-
-input,
-textarea {
-    padding-left: ;
-}
-
-textarea {
-    
-}   
-
-ul {
-    
 }
 
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    header {
-    
-    }
-    
-    section {
-        
-    }
-    
-    footer {
-        
+    #app {
+        background-image: url('../images/dach-opacity-mobile.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: auto;
     }
 
     h1 {
-        
+        font-size: var(--font-size__h1--mobile);
     }
 
     h2 {
-        
-    }
-
-    h3 {
-
-    }
-
-    h4 {
-
+        font-size: var(--font-size__h2--mobile);
     }
 
     a {
-        
+       font-size: var(--font-size__a--mobile);
     }
 
-
     input {
-        width: 100%;
-        
+        width: 100%;   
     }
     
     textarea {
@@ -109,40 +45,26 @@ ul {
 
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
-    .hamburger--icon {
-        display: none;
-    }
-
-    header {
-    
-    }
-    
-    section {
-        
-    }
-    
-    footer {
-        
+    #app {
+        background: rgba(0, 0, 0, 0.61);
+        background-image: url('../images/dach-opacity.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
     }
 
     h1 {
-        
+        font-size: var(--font-size__h1--desktop);
     }
 
     h2 {
-        
-    }
-
-    h3 {
-
-    }
-
-    h4 {
-
+        font-size: var(--font-size__h2--desktop);
     }
 
     a {
-
+        font-size: var(--font-size__a--desktop);
     }
 
     input {
