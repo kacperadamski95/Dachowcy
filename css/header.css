@@ -5,15 +5,14 @@
     align-items: center;
 }
 
-
 /* Desktop and tablet */
 @media only screen and (max-width: 769px) {
     header {
-        height: 8rem;
+        height: 9rem;
     }
 
     .navigation {
-        padding-left: var(--space--m);
+        padding-left: var(--space--xs);
         padding-right: var(--space--xl);
     }
 
@@ -42,9 +41,19 @@
     .logo-picture {
         height: 12.5rem;
         width: auto;
+        margin-left: 2rem;
     }
     
     .hamburger--icon {
         display: none;
+    }
+
+    .menu_links a {
+        padding-right: 5rem;
+    }
+
+    .menu_links a:hover {
+        color: rgb(11,142,54, 1);
+        cursor: pointer;
     }
 }
