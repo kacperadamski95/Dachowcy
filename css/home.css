@@ -4,6 +4,7 @@ li::marker {
 
 a {
     text-decoration:none;
+    font-style: normal;
 }
 
 .about-us {
@@ -62,16 +63,19 @@ a {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 152rem;
-        height: 84rem;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
         border-radius: 2rem;
     }
 
     .main-page__picture {
         width: 55rem;
         height: 55rem;
-        margin-right: 10rem;
-        margin-top: 10rem;
+        margin-right: 13rem;
+        margin-bottom: var(--space--xxl);
     }
 
     .mobile-main-container {

@@ -6,12 +6,9 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 768px) {
-    header {
-        height: 9rem;
-    }
-
+@media only screen and (max-width: 768px) {    
     .navigation {
+        height: var(--navigation--height);
         padding-left: var(--space--xs);
         padding-right: var(--space--xl);
     }
@@ -22,27 +19,28 @@
 
     .logo-picture {
         height: 8rem;
-        width: auto;
+        width: 10rem;
+        margin-top: var(--space--s);
     }
 
     .hamburger--icon {
         height: 5.5rem;
-        width: auto;
+        width: 5.5rem;
     }
 
-    .close--icon {
+    .icon--close {
         height: 0.1rem;
         width: 0.1rem;
         opacity: 0;
     }
 
-    .active--icon {
+    .icon--active {
         height: 5rem;
         width: auto;
         opacity: 1;
     }
 
-    .inactive--icon {
+    .icon--inactive {
         display: none;
     }
 
@@ -52,12 +50,12 @@
         opacity: 0;
         overflow: hidden;
         transition-property: opacity;
-        transition-duration: 0.5s;
+        transition-duration: 0.3s;
     }
 
     .menu-active {
         width: 100vw;
-        height: 91vh;
+        height: calc(100vh - var(--navigation--height));
         opacity: 1;
         display: flex;
         flex-direction: column;
@@ -69,7 +67,7 @@
         background-size: cover;
         position: absolute;  
         right: 0;
-        top: 9rem;
+        top: var(--navigation--height);
         z-index: 1;
         overflow: hidden;
     }
@@ -83,12 +81,8 @@
 @media only screen and (min-width: 769px) {
     .menu-hidden,
     .hamburger--icon,
-    .close--icon {
+    .icon--close {
         display: none;
-    }
-
-    header {
-        height: 12.5rem;
     }
 
     .logo-picture {
@@ -101,8 +95,17 @@
         padding-right: 5rem;
     }
 
-    .menu_links a:hover {
-        color: rgb(11,142,54, 1);
-        cursor: pointer;
+    .navigation {
+        z-index: 2;
+        position: relative;
+    }
+
+    .header--backround {
+        background-color: var(--font-color--primary);
+        z-index: 3;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 }

@@ -1,57 +1,68 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    const menuIconHamburger = document.querySelector(".hamburger--icon");
-    const menuCloseIcon = document.querySelector(".close--icon")
+    const iconHamburger = document.querySelector(".hamburger--icon");
+    const iconCloseMenu = document.querySelector(".icon--close")
     const navigationMobile = document.querySelector(".menu-hidden");
     const main = document.querySelector("#app");
     const footer = document.querySelector(".footer");
-    const offerLink = document.querySelector('.offer--menu');
-    const realizationsLink = document.querySelector('.realizations--menu');
-    const referenceLink = document.querySelector('.reference--menu');
-    const contactLink = document.querySelector('.contact--menu');
-    const logoLink = document.querySelector('.logo--link');
+    const linkOffer = document.querySelector('.offer--menu');
+    const linkRealizations = document.querySelector('.realizations--menu');
+    const linkReference = document.querySelector('.reference--menu');
+    const linkContact = document.querySelector('.contact--menu');
+    const linkLogo = document.querySelector('.logo--link');
+    const navigation = document.querySelector('.navigation');
     const hideElements = function() {
-        menuIconHamburger.classList.remove("inactive--icon");
-        menuCloseIcon.classList.remove("active--icon")
+        iconHamburger.classList.remove("icon--inactive");
+        iconCloseMenu.classList.remove("icon--active")
         navigationMobile.classList.remove("menu-active");
         main.classList.remove("menu-hidden");
         footer.classList.remove("menu-hidden")
     }
     const showElements = function() {
-        menuIconHamburger.classList.add("inactive--icon");
-        menuCloseIcon.classList.add("active--icon")
+        iconHamburger.classList.add("icon--inactive");
+        iconCloseMenu.classList.add("icon--active")
         navigationMobile.classList.add("menu-active");
         main.classList.add("menu-hidden");
         footer.classList.add("menu-hidden")
     }
 
     
-    menuIconHamburger.addEventListener("click", (event) => {
+    iconHamburger.addEventListener("click", (event) => {
         showElements()
     })
 
-    menuCloseIcon.addEventListener("click", (event) => {
+    iconCloseMenu.addEventListener("click", (event) => {
         hideElements()
     })
 
-    offerLink.addEventListener("click", (event) => {
+    linkOffer.addEventListener("click", (event) => {
         hideElements()
     })
 
-    realizationsLink.addEventListener("click", (event) => {
+    linkRealizations.addEventListener("click", (event) => {
         hideElements()
     })
 
-    referenceLink.addEventListener("click", (event) => {
+    linkReference.addEventListener("click", (event) => {
         hideElements()
     })
 
-    contactLink.addEventListener("click", (event) => {
+    linkContact.addEventListener("click", (event) => {
         hideElements()
     })
 
-    logoLink.addEventListener("click", (event) => {
+    linkLogo.addEventListener("click", (event) => {
         hideElements()
     })
+    
+
+    window.onscroll = function() {
+        const top = window.scrollY;
+        if (top>=5) {
+            navigation.classList.add("header--backround");
+        } else {
+            navigation.classList.remove("header--backround");
+        }
+    }
 });     
 
 
