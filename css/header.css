@@ -5,6 +5,16 @@
     align-items: center;
 }
 
+.header {
+    position: sticky;
+    top: 0;
+    background-color: var(--font-color--primary);
+}
+
+body {
+    position: relative;
+}
+
 /* Mobile */
 @media only screen and (max-width: 768px) {    
     .navigation {
@@ -93,19 +103,5 @@
 
     .menu_links a {
         padding-right: 5rem;
-    }
-
-    .navigation {
-        z-index: 2;
-        position: relative;
-    }
-
-    .header--backround {
-        background-color: var(--font-color--primary);
-        z-index: 3;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
     }
 }

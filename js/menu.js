@@ -55,14 +55,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
     })
     
 
-    window.onscroll = function() {
-        const top = window.scrollY;
-        if (top>=5) {
-            navigation.classList.add("header--backround");
-        } else {
-            navigation.classList.remove("header--backround");
-        }
-    }
+    // window.onscroll = function() {
+    //     const top = window.scrollY;
+    //     if (top>=5) {
+    //         navigation.classList.add("header--backround");
+    //     } else {
+    //         navigation.classList.remove("header--backround");
+    //     }
+    // }
 });     
 
 
