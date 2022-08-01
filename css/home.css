@@ -1,29 +1,98 @@
+li::marker {
+    color: rgb(11,142,54, 1);
+}
 
+a {
+    text-decoration:none;
+    font-style: normal;
+}
+
+.about-us {
+    padding-top: var(--space--l);
+    padding-bottom: var(--space--xl);
+    padding-left: var(--space--l);
+    padding-right: var(--space--l);
+}
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    .main-page {
-        padding-top: var(--space--xxl);
-        padding-bottom: 7.5rem;
-        padding-left: var(--space--m);
-        padding-right: var(--space--m);
-        border-radius: 50%;
+    .main-page__picture {
+        display: none;
     }
 
-    .about-us-mobile {
+    .about-us {
         background-color: var(--background-color--secondary);
-        width: 90vw;
+        border-radius: 1rem;
+    }
+
+    .main-page {
         padding-top: var(--space--xxl);
-        padding-bottom: 7.5rem;
+        padding-bottom: 10rem;
         padding-left: var(--space--m);
         padding-right: var(--space--m);
     }
+
+   .mobile-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+    h1 {
+        padding-bottom: var(--space--xxl);
+    }
+
+    ul {
+        padding-left: var(--space--m);
+    }
+
+
 }
 
 
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
+    #app {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
     .main-page {
         background-color: var(--background-color--primary);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        margin-left: 15rem;
+        margin-right: 15rem;
+        border-radius: 2rem;
+    }
+
+    .main-page__picture {
+        width: 55rem;
+        height: 55rem;
+        margin-right: 13rem;
+        margin-bottom: var(--space--xxl);
+    }
+
+    .mobile-main-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: var(--space--xxl);
+        padding-right: var(--space--xxl);
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    .about-us {
+        width: 85%;
+    }
+
+    ul {
+        padding-left: var(--space--l);
     }
 }
