@@ -1,6 +1,63 @@
+#offer div img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 1rem;
+}
+
+.wood--material,
+.tile--material,
+.tinware--material,
+.mug--material,
+.flashings--material,
+.windows--material {
+    width: 87vw;
+    height: 35rem;
+    background-color: var(--font-color--primary);
+    padding-top: var(--space--l);
+    padding-bottom: var(--space--xl);
+    padding-left: var(--space--l);
+    padding-right: var(--space--xl);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.tile--material,
+.tinware--material,
+.mug--material,
+.flashings--material,
+.windows--material {
+    margin-top: var(--space--xxl)
+}
+
+#offer div > div {
+    display: flex;
+    align-items: center;
+    padding-bottom: var(--space--s);
+}
+
+#offer div > p {
+    padding-left: var(--space--xs);
+}
+
+#offer div > h2 {
+    font-weight: var(--font-weight--normal);
+    padding-left: var(--space--m);
+}
+
+#offer li::marker {
+    margin-left: 0.5rem
+}
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
-
+    #offer {
+    display: grid;
+    place-items: center;
+    padding-top: var(--space--xxl);
+    padding-bottom: 10rem;
+    padding-left: var(--space--m);
+    padding-right: var(--space--m);
+    }
 }    
 
 /* Desktop and tablet */
