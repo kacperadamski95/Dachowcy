@@ -102,6 +102,11 @@ body {
     }
 
     .menu_links a {
-        padding-right: 5rem;
+        padding: 2.5rem;
+        font-size: 1.5vw;
+    }
+
+    .menu_links a:last-of-type {
+        margin-right: 2.5rem;
     }
 }

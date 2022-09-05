@@ -4,48 +4,37 @@
     border-radius: 1rem;
 }
 
-.wood--material,
-.tile--material,
-.tinware--material,
-.mug--material,
-.flashings--material,
-.windows--material {
-    width: 87vw;
-    height: 35rem;
+.material--wood,
+.material--tile,
+.material--tinware,
+.material--mug,
+.material--flashings,
+.material--windows {
     background-color: var(--font-color--primary);
     padding-top: var(--space--l);
     padding-bottom: var(--space--xl);
     padding-left: var(--space--l);
     padding-right: var(--space--xl);
     border-radius: 1rem;
-    margin-bottom: 2rem;
 }
 
-.tile--material,
-.tinware--material,
-.mug--material,
-.flashings--material,
-.windows--material {
-    margin-top: var(--space--xxl)
-}
-
-#offer div > div {
+#offer div > div > div {
     display: flex;
     align-items: center;
     padding-bottom: var(--space--s);
 }
 
-#offer div > p {
+#offer div > div > p {
     padding-left: var(--space--xs);
 }
 
-#offer div > h2 {
+#offer div> div > h2 {
     font-weight: var(--font-weight--normal);
     padding-left: var(--space--m);
 }
 
-#offer li::marker {
-    margin-left: 0.5rem
+ul {
+    margin-left: var(--space--xs);
 }
 
 /* Mobile */
@@ -58,9 +47,57 @@
     padding-left: var(--space--m);
     padding-right: var(--space--m);
     }
+
+    .material--wood,
+    .material--tile,
+    .material--tinware,
+    .material--mug,
+    .material--flashings,
+    .material--windows {
+        height: fit-content;
+        margin-bottom: 4rem;
+    }
+
+    #offer h1 {
+        padding-bottom: 3rem;
+    }
 }    
 
 /* Desktop and tablet */
 @media only screen and (min-width: 769px) {
-    
+    #offer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #offer p,
+    #offer li {
+        font-size: var(--font-size--base);
+    }
+
+    #offer h1 {
+        text-align: center;
+        color: var(--font-color--primary);
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+
+    .material--wood,
+    .material--tile,
+    .material--tinware,
+    .material--mug,
+    .material--flashings,
+    .material--windows {
+        width: 40rem;
+    }
+
+    .desktop--row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 156rem;
+        gap: 18rem;
+        margin-bottom: 13rem;
+    }
 }
