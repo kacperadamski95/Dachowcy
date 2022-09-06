@@ -1,0 +1,62 @@
+#ff-compose{
+    height:100%;
+    margin:auto;
+}
+
+[class="btn btn-lg btn-primary"] {
+    display: none;
+}
+
+#ff-success {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#ff-success {
+    font-size: 2.2rem;
+}
+
+.ff-form .ff-powered-img {
+    width: 0.1rem !important;
+    height: 0.1rem !important;
+}
+
+[src="https://formfacade.com/logo/madewith/formfacade.svg"],
+.ff-partial {
+    display: none !important;
+}
+
+.form-check-input {
+    width: 5%;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    #ff-compose{
+        width:90%;
+    }
+
+    .contact {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        padding-left: var(--space--m);
+        padding-right: var(--space--m);
+    }
+
+    #Publish1FAIpQLSfVlF43KcO1mhpO0I9EZcau2S7NZqhLsxsGEtVV1SbbHUft_w {
+        padding: 1.5rem;
+    }
+}
+
+/* Desktop and tablet */
+@media only screen and (min-width: 769px) {
+    .contact {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        padding-left: var(--space--m);
+        padding-right: var(--space--m);
+    }
+}
