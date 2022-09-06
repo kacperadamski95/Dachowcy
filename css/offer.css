@@ -55,6 +55,7 @@ ul {
     .material--flashings,
     .material--windows {
         height: fit-content;
+        line-height: 2.5rem;
         margin-bottom: 4rem;
     }
 
@@ -88,6 +89,7 @@ ul {
     .material--mug,
     .material--flashings,
     .material--windows {
+        line-height: 2.8rem;
         width: 40rem;
     }
 

@@ -21,7 +21,7 @@ a {
     }
 
     .about-us {
-        background-color: var(--background-color--secondary);
+        background-color: var(--font-color--primary);
         border-radius: 1rem;
     }
 
@@ -62,7 +62,7 @@ a {
     }
     
     .main-page {
-        background-color: var(--background-color--primary);
+        background-color: var(--font-color--primary);
         display: flex;
         flex-direction: row;
         justify-content: center;

@@ -6,10 +6,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     const footer = document.querySelector(".footer");
     const linkOffer = document.querySelector('.offer--menu');
     const linkRealizations = document.querySelector('.realizations--menu');
-    const linkReference = document.querySelector('.reference--menu');
+    const linkHome = document.querySelector('.home--menu');
     const linkContact = document.querySelector('.contact--menu');
     const linkLogo = document.querySelector('.logo--link');
-    const navigation = document.querySelector('.navigation');
     const hideElements = function() {
         iconHamburger.classList.remove("icon--inactive");
         iconCloseMenu.classList.remove("icon--active")
@@ -42,7 +41,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         hideElements()
     })
 
-    linkReference.addEventListener("click", (event) => {
+    linkHome.addEventListener("click", (event) => {
         hideElements()
     })
 
@@ -53,16 +52,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
     linkLogo.addEventListener("click", (event) => {
         hideElements()
     })
-    
-
-    // window.onscroll = function() {
-    //     const top = window.scrollY;
-    //     if (top>=5) {
-    //         navigation.classList.add("header--backround");
-    //     } else {
-    //         navigation.classList.remove("header--backround");
-    //     }
-    // }
 });     
 
 
