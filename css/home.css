@@ -21,8 +21,13 @@ a {
     }
 
     .about-us {
-        background-color: var(--background-color--secondary);
+        background-color: var(--font-color--primary);
         border-radius: 1rem;
+    }
+
+    .about-us p, 
+    .about-us li {
+        font-size: 1.4rem;
     }
 
     .main-page {
@@ -38,15 +43,13 @@ a {
     align-items: center;
    }
 
-    h1 {
+    .mobile-main-container h1 {
         padding-bottom: var(--space--xxl);
     }
 
     ul {
         padding-left: var(--space--m);
     }
-
-
 }
 
 
@@ -59,37 +62,40 @@ a {
     }
     
     .main-page {
-        background-color: var(--background-color--primary);
+        background-color: var(--font-color--primary);
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
+        width: 81%;
         margin-top: 10rem;
         margin-bottom: 10rem;
-        margin-left: 15rem;
-        margin-right: 15rem;
         border-radius: 2rem;
     }
 
     .main-page__picture {
         width: 55rem;
         height: 55rem;
-        margin-right: 13rem;
-        margin-bottom: var(--space--xxl);
+        margin-top: 5rem;
     }
 
     .mobile-main-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-left: var(--space--xxl);
-        padding-right: var(--space--xxl);
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
 
     .about-us {
-        width: 85%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10rem;
+        justify-content: center;
+    }
+
+    .text--information {
+        width: 65rem;
     }
 
     ul {
