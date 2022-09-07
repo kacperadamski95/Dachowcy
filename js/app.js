@@ -6,7 +6,6 @@
             new Route('home', 'home.html', true),
             new Route('offer', 'offer.html'),
             new Route('realizations', 'realizations.html'),
-            new Route('reference', 'reference.html'),
             new Route('contact', 'contact.html'),
         ]);
     }

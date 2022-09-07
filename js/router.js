@@ -48,6 +48,8 @@ Router.prototype = {
             };
             xhttp.open('GET', url, true);
             xhttp.send();
+            const changEvent = new CustomEvent('initSliderPls');
+            document.dispatchEvent(changEvent);
         })(this);
     }
 };
